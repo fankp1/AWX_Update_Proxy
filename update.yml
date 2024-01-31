@@ -1,0 +1,7 @@
+---
+- name: Updating the Proxy-Servers in order to have the latest firmware installed
+  hosts: all
+
+  tasks:
+    - name: "Update the repositories and upgrade them (apt-get update + apt-get upgrade)"
+      shell: sudo apt-get update && sudo apt-get upgrade -y
